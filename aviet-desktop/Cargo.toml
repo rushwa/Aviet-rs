@@ -1,0 +1,22 @@
+[package]
+name = "aviet-desktop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aviet-shared = { path = "../aviet-shared" }
+
+relm4 = { version = "0.11.0", features = ["libadwaita"] }
+relm4-components = "0.11.0"
+gtk4 = { version = "0.11.3", package = "gtk4", features = ["v4_12"] }
+libadwaita = { version = "0.9.1", features = ["v1_6"] }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+
+reqwest = { version = "0.13", features = ["json"] }
+glib = "0.20"
